@@ -220,6 +220,18 @@ span{
     text-align: center;
 }
 
+#about{
+    height: 100vh;
+    width: 100vw;
+}
+
+#skills-section{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+
 .container{
     margin: auto;
     width: 800px;
@@ -602,3 +614,6 @@ footer p{
     font-size: 14px;
     font-weight: 600;
 }
+
+
+/* https://codepen.io/bradtraversy/pen/xBdyzr */
