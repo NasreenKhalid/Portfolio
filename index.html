@@ -20,7 +20,7 @@
                 <li><a href="#about">Home &nbsp;<i class="fas fa-home"></i></a></li>
                 <li><a href="#skills-section">Skills &nbsp;<i class="fas fa-eraser"></i></a></li>
                
-                <li><a href="#projects">Clients &nbsp;<i class="fas fa-address-card"></i></a></li>
+                <li><a href="#clients">Clients &nbsp;<i class="fas fa-address-card"></i></a></li>
                 <li><a href="#contact">Contact Me &nbsp;<i class="fas fa-address-card"></i></a></li>
             </ul>
         </div>
@@ -46,9 +46,9 @@
     </div>
 
     <div class="right">
-        <h2 class="text">I'm Nasreen Khalid <span class="wave-emoji" >👋</span></h2>
-        <p>I'm a learning Full Stack Developer</p>
-        <p>I love to code and build web applications that help solve real world problems...</p>
+        <h2 class="text">I'm Nasreen Khalid <span class="wave-emoji" >👋</span><br></h2>
+        <p class="about-text">I'm a learning Full Stack Developer</p>
+        <p class="about-text">I love to code and build web applications that help solve real world problems...</p>
         <div class="social-icons">
             <i class="fab fa-facebook" style="color: #3b5998;"></i>
             <i class="fab fa-github" style="color: #333;"></i>
@@ -80,7 +80,7 @@
         </div>
         <div class="skill-text">
 <p>html5</p>
-<p>Building Basic Website Page</p>
+<p class="about-text">Building Basic Website Page</p>
         </div>
     </div>
 
@@ -90,7 +90,7 @@
         </div>
         <div class="skill-text">
 <p>CSS3</p>
-<p>Adding stylesheets</p>
+<p class="about-text">Adding stylesheets</p>
         </div>
     </div>
 
@@ -101,7 +101,7 @@
         </div>
         <div class="skill-text">
 <p>Saas</p>
-<p>Building Basic Website Page</p>
+<p class="about-text">Building Basic Website Page</p>
         </div>
     </div>
 
@@ -111,7 +111,7 @@
         </div>
         <div class="skill-text">
 <p>JavaScript</p>
-<p>Making the websites more dynamic</p>
+<p class="about-text">Making the websites more dynamic</p>
         </div>
     </div>
 
@@ -120,7 +120,7 @@
     </div>
 
     <div class="left">
-        <img src="https://res.cloudinary.com/dmsxwwfb5/image/upload/v1595866967/full-stack-devlopment-min.png"/>
+        <img class="skills-img" src="https://res.cloudinary.com/dmsxwwfb5/image/upload/v1595866967/full-stack-devlopment-min.png"/>
     </div>
 </div>
 </section>
@@ -130,6 +130,7 @@
 <br>
 <hr>
 <!-- Projects Section -->
+
 <h1 class="title">My Projects</h1>
 <div class="container" id="projects">
 
@@ -173,46 +174,49 @@
 <hr>
 
 <!-- Projects Div -->
-<section id="projects">
-    <!-- Project heading -->
-    <div class="skill-heading ml-5">
-        <span>Projects</span>
-        <h2 class="title">My client Portfolio</h2>
+<section id="clients">
+ 
+<!-- Project heading -->
+<div class="skill-heading ml-5">
+    <span style="margin-left: 340px;">Work For Clients...</span>
+    <h2 class="title">My client Portfolio</h2>
+</div>
+<div class="container-client-portfolio">
+<!-- Projects showcase -->
+<div class="project-showcase">
+    <div class="project one">
+    <!-- on hover we will just make this div visible -->
+        <div class="hide">
+<p class="project-text">This is my First Client Porject.</p>
+<a class="project-btn">View Website</a>
+        </div>
+
     </div>
 
-<!-- Projects showcase -->
-    <div class="project-showcase">
-        <div class="project one">
+    <div class="project two">
         <!-- on hover we will just make this div visible -->
             <div class="hide">
-    <p class="project-text">This is my First Client Porject.</p>
+    <p class="project-text">This is my Second Client Porject.</p>
     <a class="project-btn">View Website</a>
             </div>
 
         </div>
 
-        <div class="project two">
+
+        <div class="project three">
             <!-- on hover we will just make this div visible -->
                 <div class="hide">
-        <p class="project-text">This is my Second Client Porject.</p>
+        <p class="project-text">This is my Third Client Porject.</p>
         <a class="project-btn">View Website</a>
                 </div>
     
             </div>
 
+</div>
 
-            <div class="project three">
-                <!-- on hover we will just make this div visible -->
-                    <div class="hide">
-            <p class="project-text">This is my Third Client Porject.</p>
-            <a class="project-btn">View Website</a>
-                    </div>
-        
-                </div>
-
+<a href="#" class="contact-btn" style="margin: auto;">View More</a>
     </div>
-
-    <a href="#" class="contact-btn">View More</a>
+    
 
 </section>
 
@@ -286,7 +290,7 @@
 <!-- Contact us Form -->
 <section id="contact">
    
-    <img src="/images/contact.jpeg" alt="contact-me"/>
+    <img style="width: 65%;" src="/images/contact.jpeg" alt="contact-me"/>
 <h3>Let's work together!</h3>
 <div class="contact-input">
     <input type="email"  placeholder="Enter your email.."/>

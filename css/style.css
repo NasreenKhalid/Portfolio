@@ -9,6 +9,7 @@ smooth scroll,margins*/
 
 --text-color: #146356;
 --background-color-light: #69c9b9;
+--text-grey: rgb(139, 139, 139,0.7);
 }
 
 
@@ -100,7 +101,7 @@ span{
 }
 
 .wave-emoji{
-   font-size: 32px;
+   font-size: 36px;
    display: inline-block;
  animation: wave 1.8s infinite ease-in;
  /* transform-origin: 70% 70%; */
@@ -221,29 +222,40 @@ span{
 }
 
 #about{
-    height: 100vh;
-    width: 100vw;
+    scroll-snap-align:center;
 }
 
 #skills-section{
-    height: 100vh;
-    width: 100%;
-    scroll-snap-align: center;
+    scroll-snap-align:center;
+}
+
+#clients{
+    scroll-snap-align:center;
 }
 
 
 .container{
     margin: auto;
-    width: 800px;
-    height: 400px;
+    width: 80%;
+    height: 500px;
     /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+.container-client-portfolio{
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .text{
+    font-size: 42px;
 animation: slide 2s ease-in;
+margin-bottom: 7px;
 }
 
 @keyframes slide {
@@ -258,6 +270,7 @@ animation: slide 2s ease-in;
 
 
 .right{
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,9 +287,24 @@ animation: slide 2s ease-in;
 }
 
 img{
-    width: 330px;
-    margin-top: 70px;
+    width: 520px;
+    margin-top: 10px;
+    margin-right: 10px;
     object-fit: contain;
+}
+
+.skills-img{
+    width: 500px;
+    margin-top: 110px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.about-text{
+    color: #868e96;
+    font-size: 18px;
+    font-weight: normal;
+
 }
 
 /* Skills */
@@ -298,6 +326,14 @@ img{
 .skill-box-container{
     display: flex;
     margin: 15px 0px;
+}
+
+.skill-text p{
+    color: #868e96;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 
 .dev-icons i{
@@ -412,7 +448,7 @@ hr:before { /* Not really supposed to work, but does */
 .project-showcase{
     display: flex;
     justify-content: space-between;
-
+margin-left: 70px;
     width: 80%;
 }
 
